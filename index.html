@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumble Word Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Jumble Word Game</h2>
+        <div class="headerBorder"></div>
+    </header>
+
+    <section>
+
+        <div class="container">
+
+
+            <div class="mainBox">
+
+                <div class="statusBox">
+                    <!-- <p class="status status-red">WRONG</p> -->
+                    <p id="status" class="status status-green">CORRECT</p>
+                </div>
+
+                <div class="textInput">
+                    <input type="text" id="userText" oninput="checkUserText()">
+                </div>
+
+                <p class="u-word" id="uWord">HINSE</p>
+
+                <button class="mainBtn" onclick="start()">New Word</button>
+
+                <button class="mainBtn" onclick="showAnswer()">Answer</button>
+
+            </div>
+
+
+        </div>
+
+
+
+    </section>
+
+</body>
+<script src="index.js"></script>
+</html>
